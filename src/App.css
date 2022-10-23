@@ -7,10 +7,67 @@
   margin: 50px auto;
 }
 #profile_img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #slack {
   display: none;
+}
+.link_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 100%;
+}
+.link_btn {
+  width: 70%;
+  padding: 10px 5px;
+  border-radius: 8px;
+  background-color: #EAECF0;
+  border: 1px solid #EAECF0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #101828;
+}
+.text_subtext h5{
+  font-size: 18px;
+}
+.text_subtext p{
+  font-size: 16px;
+}
+#icons {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 1rem;
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: .5rem auto;
+  border-top: 1px solid #EAECF0;
+  padding: 1rem 0;
+}
+
+#footer p {
+  color: #667085;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media(max-width: 768px){
+  .link_btn {
+    width: 85%;
+  }
+  #icons {
+    display: none;
+  }
+  #footer {
+    display: none;
+  }
 }
