@@ -27,17 +27,17 @@
   width: 70%;
   padding: 10px 5px;
   border-radius: 8px;
-  background-color: #EAECF0;
-  border: 1px solid #EAECF0;
+  background-color: #eaecf0;
+  border: 1px solid #eaecf0;
   margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
   color: #101828;
 }
-.text_subtext h5{
+.text_subtext h5 {
   font-size: 18px;
 }
-.text_subtext p{
+.text_subtext p {
   font-size: 16px;
 }
 #icons {
@@ -50,8 +50,8 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: .5rem auto;
-  border-top: 1px solid #EAECF0;
+  margin: 0.5rem auto;
+  border-top: 1px solid #eaecf0;
   padding: 1rem 0;
 }
 
@@ -60,7 +60,7 @@
   font-weight: 400;
   font-size: 16px;
 }
-@media(max-width: 768px){
+@media (max-width: 768px) {
   .link_btn {
     width: 85%;
   }

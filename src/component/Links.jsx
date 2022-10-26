@@ -19,7 +19,7 @@ const Links = () => {
     {
       id: "book__python",
       text: "Python Books",
-      link: "https://books.zuri.team/python-for-beginners?ref_id=Muakone",
+      link: "https://books.zuri.team/python-for-beginners?ref_id=<Muakone>",
     },
     {
       id: "pitch",
@@ -28,7 +28,7 @@ const Links = () => {
     },
     {
       id: "book_design",
-      text: "Book Design",
+      text: "Design Books",
       link: "https://books.zuri.team/design-rules",
     },
   ];
