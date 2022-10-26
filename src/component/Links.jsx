@@ -13,8 +13,6 @@ const Links = () => {
       id: "books",
       text: "Coding & Design Books",
       link: "http://books.zuri.team",
-      subText:
-        "You can get books to improve your coding and design skills here",
     },
     {
       id: "book__python",
@@ -45,7 +43,6 @@ const Links = () => {
         >
           <div className="text_subtext">
             <h5>{data.text}</h5>
-            {data.subText && <p>{data.subText}</p>}
           </div>
         </a>
       ))}
