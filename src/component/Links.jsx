@@ -48,7 +48,9 @@ const Links = () => {
       ))}
       <div id="icons">
         <img src={Slack} alt="slack-icon" />
-        <img src={Github} alt="github-icon" />
+        <a href="https://github.com/muakone">
+          <img src={Github} alt="github-icon" />
+        </a>
       </div>
     </div>
   );
