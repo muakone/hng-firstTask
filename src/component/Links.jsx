@@ -5,7 +5,7 @@ import Slack from "../images/slack.svg";
 const Links = () => {
   const linkData = [
     {
-      id: "btn__zuri",
+      id: "btn_zuri",
       text: "Zuri",
       link: "https://training.zuri.team/",
     },
@@ -15,7 +15,7 @@ const Links = () => {
       link: "http://books.zuri.team",
     },
     {
-      id: "book__python",
+      id: "book_python",
       text: "Python Books",
       link: "https://books.zuri.team/python-for-beginners?ref_id=<Muakone>",
     },
@@ -31,17 +31,17 @@ const Links = () => {
     },
   ];
   return (
-    <div className="link_container">
+    <div className="link-container">
       {linkData.map((data, index) => (
         <a
           href={data.link}
           target="_blank"
           rel="noreferrer"
           id={data.id}
-          className="link_btn"
+          className="link-btn"
           key={index}
         >
-          <div className="text_subtext">
+          <div className="text-subtext">
             <h5>{data.text}</h5>
           </div>
         </a>

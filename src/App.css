@@ -15,7 +15,7 @@
 #slack {
   display: none;
 }
-.link_container {
+.link-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
   margin: 10px auto;
   width: 100%;
 }
-.link_btn {
+.link-btn {
   width: 70%;
   padding: 10px 5px;
   border-radius: 8px;
@@ -34,10 +34,10 @@
   text-decoration: none;
   color: #101828;
 }
-.text_subtext h5 {
+.text-subtext h5 {
   font-size: 18px;
 }
-.text_subtext p {
+.text-subtext p {
   font-size: 16px;
 }
 #icons {
@@ -61,7 +61,7 @@
   font-size: 16px;
 }
 @media (max-width: 768px) {
-  .link_btn {
+  .link-btn {
     width: 85%;
   }
   #icons {
