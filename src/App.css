@@ -10,7 +10,7 @@
   width: 150px;
   height: 150px;
   border-radius: 100vw;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: solid 2px black;
 }
 #slack {
   display: none;
@@ -25,7 +25,7 @@
 }
 .link-btn {
   width: 70%;
-  padding: 10px 5px;
+  padding: 2px;
   border-radius: 8px;
   background-color: #eaecf0;
   border: 1px solid #eaecf0;
