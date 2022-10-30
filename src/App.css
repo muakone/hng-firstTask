@@ -25,7 +25,7 @@
 }
 .link-btn {
   width: 70%;
-  padding: 2px;
+  height: 70px;
   border-radius: 8px;
   background-color: #eaecf0;
   border: 1px solid #eaecf0;
@@ -33,12 +33,16 @@
   text-align: center;
   text-decoration: none;
   color: #101828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-subtext {
+  text-align: center;
 }
 .text-subtext h5 {
   font-size: 18px;
-}
-.text-subtext p {
-  font-size: 16px;
 }
 #icons {
   display: flex;
