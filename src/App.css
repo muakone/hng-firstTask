@@ -1,60 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#App {
+  width: 80%;
+  margin: 1.5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
 }
-#profile_img {
-  width: 150px;
-  height: 150px;
-  border-radius: 100vw;
-  border: solid 2px black;
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+#profile__img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+#profile p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+#profile p a {
+  text-decoration: none;
+}
+
+#twitter {
+  margin: 1rem 0;
+}
+
 #slack {
   display: none;
 }
-.link-container {
+
+#links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 10px auto;
-  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  width: 95%;
+  margin: 2rem auto;
 }
-.link-btn {
-  width: 70%;
-  height: 70px;
-  border-radius: 8px;
+
+#links a {
   background-color: #eaecf0;
-  border: 1px solid #eaecf0;
-  margin-bottom: 20px;
-  text-align: center;
+  color: black;
   text-decoration: none;
-  color: #101828;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.text-subtext {
   text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 2.2rem;
+  width: 100%;
+  border-radius: 8px;
 }
-.text-subtext h5 {
-  font-size: 16px;
-}
+
 #icons {
   display: flex;
-  gap: 1.4rem;
+  gap: 1.5rem;
   margin-top: 1rem;
+  margin-bottom: 15px;
 }
+#icons img {
+  width: 50px;
+  height: 50px;
+}
+
 #footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 0.5rem auto;
+  width: 100%;
+  margin: 2rem 0 0 0;
   border-top: 1px solid #eaecf0;
   padding: 1rem 0;
 }
@@ -64,14 +91,27 @@
   font-weight: 400;
   font-size: 16px;
 }
-@media (max-width: 768px) {
-  .link-btn {
-    width: 85%;
+
+@media (max-width: 600px) {
+  #App {
+    width: 90%;
   }
-  #icons {
-    display: none;
+  #container {
+    width: 95%;
+  }
+  #profile__img {
+    width: 150px;
+    height: 150px;
+  }
+  #links {
+    width: 95%;
+  }
+
+  #links a {
+    font-size: 14px;
   }
   #footer {
-    display: none;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

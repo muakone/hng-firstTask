@@ -1,16 +1,12 @@
 import React from "react";
-import Avatar from "../images/Muhiz-Akanni.jpg";
+import Avatar from "../images/avatar.jpg";
 
 const Profile = () => {
   return (
-    <div className="profile">
-      <div className="profile-image-container">
-        <img src={Avatar} alt="profile" id="profile_img" />
-      </div>
-      <div className="author">
-        <h2 id="twitter">muhiz_akanni</h2>
-        <h2 id="slack">Muakone</h2>
-      </div>
+    <div id="profile">
+      <img src={Avatar} alt="dp" id='profile__img' />
+        <p id='twitter'>Twitter: <a href="https://twitter.com/muhiz_akanni">muhiz_akanni</a></p>
+        <p id='slack'>Muakone</p>
     </div>
   );
 };

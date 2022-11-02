@@ -3,56 +3,57 @@ import Github from "../images/github.svg";
 import Slack from "../images/slack.svg";
 
 const Links = () => {
-  const linkData = [
-    {
-      id: "btn_zuri",
-      text: "Zuri",
-      link: "https://training.zuri.team/",
-    },
-    {
-      id: "books",
-      text: "Coding & Design Books",
-      link: "http://books.zuri.team",
-    },
-    {
-      id: "book_python",
-      text: "Python Books",
-      link: "https://books.zuri.team/python-for-beginners?ref_id=<Muakone>",
-    },
-    {
-      id: "pitch",
-      text: "Background Check for Coders",
-      link: "https://background.zuri.team",
-    },
-    {
-      id: "book_design",
-      text: "Design Books",
-      link: "https://books.zuri.team/design-rules",
-    },
-  ];
   return (
-    <div className="link-container">
-      {linkData.map((data, index) => (
+    <>
+      <div id="links">
         <a
-          href={data.link}
+          href="https://training.zuri.team/"
           target="_blank"
           rel="noreferrer"
-          id={data.id}
-          className="link-btn"
-          key={index}
+          id="btn__zuri"
         >
-          <div className="text-subtext">
-            <h5>{data.text}</h5>
-          </div>
+          Zuri Team
         </a>
-      ))}
+        <a
+          href="http://books.zuri.team"
+          target="_blank"
+          rel="noreferrer"
+          id="books"
+        >
+          Zuri Books
+        </a>
+        <a
+          href="https://books.zuri.team/python-for-beginners?ref_id=Muakone"
+          target="_blank"
+          rel="noreferrer"
+          id="book__python"
+        >
+          Python Books
+        </a>
+        <a
+          href=" https://background.zuri.team"
+          target="_blank"
+          rel="noreferrer"
+          id="pitch"
+        >
+          Background Check for Programmers
+        </a>
+        <a
+          href="https://books.zuri.team/design-rules"
+          target="_blank"
+          rel="noreferrer"
+          id="book__design"
+        >
+          Buy free design books from zuri
+        </a>
+      </div>
       <div id="icons">
         <img src={Slack} alt="slack-icon" />
         <a href="https://github.com/muakone">
           <img src={Github} alt="github-icon" />
         </a>
       </div>
-    </div>
+    </>
   );
 };
 
